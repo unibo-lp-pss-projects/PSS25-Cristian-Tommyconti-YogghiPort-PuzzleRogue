@@ -1,9 +1,15 @@
+
 plugins {
     java
     application
     id("org.openjfx.javafxplugin") version "0.1.0"
     id("com.gradleup.shadow") version "9.2.2"
+
+    id("org.danilopianini.unibo-oop-gradle-plugin") version "1.1.77"
 }
+
+java { toolchain { languageVersion.set(JavaLanguageVersion.of(21)) } }
+
 
 repositories {
     mavenCentral()
